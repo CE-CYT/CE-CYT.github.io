@@ -1,19 +1,134 @@
-<!-- archivo: index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Child Safety Policy</title>
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #e74c3c;
+      --accent: #3498db;
+      --light: #ecf0f1;
+      --dark: #2c3e50;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+    
+    .logo {
+      display: block;
+      margin: 0 auto 20px auto;
+      max-height: 100px;
+    }
+    
+    h1 {
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid var(--accent);
+    }
+    
+    .intro {
+      font-size: 1.1em;
+      text-align: center;
+      margin-bottom: 30px;
+      color: var(--secondary);
+      font-weight: bold;
+    }
+    
+    ul {
+      padding-left: 20px;
+    }
+    
+    li {
+      margin-bottom: 15px;
+      padding-left: 10px;
+      position: relative;
+    }
+    
+    li:before {
+      content: "•";
+      color: var(--accent);
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+      position: absolute;
+    }
+    
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    
+    a:hover {
+      color: var(--secondary);
+      text-decoration: underline;
+    }
+    
+    .contact-box {
+      background-color: #f8f9fa;
+      border-left: 4px solid var(--secondary);
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 0 5px 5px 0;
+    }
+    
+    .icon {
+      color: var(--accent);
+      margin-right: 8px;
+    }
+    
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+      
+      .logo {
+        max-height: 60px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Child Safety Standards</h1>
-  <p>Our app strictly prohibits Child Sexual Abuse and Exploitation (CSAE).</p>
-  <ul>
-    <li>We have published standards against CSAE. (this page) </li>
-    <li>We provide an in-app mechanism for user feedback and reports.</li>
-    <li>We act on any reports of CSAE and remove content accordingly.</li>
-    <li>We comply with all applicable child safety laws and regulations.</li>
-    <li>For any type of CSAE-type of issues, the reference-email for contact of us is <a href="mailto:ucacecyt@gmail.com">ucacecyt@gmail.com</a></li>
-  </ul>
+  <div class="container">
+    <!-- Logo del CECYT -->
+    <img src="CECYT_logo.png" alt="CECYT Logo" class="logo">
+    
+    <h1>Child Safety Standards</h1>
+    <p class="intro">Our app strictly prohibits Child Sexual Abuse and Exploitation (CSAE).</p>
+    
+    <ul>
+      <li>We have published standards against CSAE (this page)</li>
+      <li>We provide an in-app mechanism for user feedback and reports</li>
+      <li>We act promptly on any reports of CSAE and remove content accordingly</li>
+      <li>We comply with all applicable child safety laws and regulations</li>
+    </ul>
+    
+    <div class="contact-box">
+      <p><span class="icon">✉️</span> For any reports or concerns regarding CSAE, please contact us immediately at: <a href="mailto:ucacecyt@gmail.com">ucacecyt@gmail.com</a></p>
+    </div>
+  </div>
 </body>
 </html>
